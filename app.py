@@ -66,6 +66,8 @@ for linha in sheet_produtos.iter_rows(min_row=2):
     pyautogui.hotkey('ctrl', 'v')
 
     tamanho = linha[10].value
+    pyautogui.click(1511,760, duration=1)
+    
     if tamanho == 'Pequeno':
         pyautogui.click(1435,797, duration=1)
         
